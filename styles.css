@@ -5,13 +5,19 @@
 
 #container {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 0em;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  height: 20rem;
+  margin: auto;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
 }
 
 .grid-item {
-  padding: 1em;
   border: 1px solid #ddd;
+  text-align: center;
+}
+
+.title{
   text-align: center;
 }
