@@ -1,12 +1,20 @@
 const btnSend = document.getElementById("btnSend");
+const btnClear = document.getElementById("btnClear");
 
 btnSend.addEventListener("click", () => {
   const txtRows = Number.parseInt(document.getElementById("txtRows").value);
   const txtCols = Number.parseInt(document.getElementById("txtCols").value);
+
   console.log(txtRows);
   console.log(txtCols);
   makeRows(txtRows, txtCols);
 });
+
+btnClear.onclick = () => clearGrid();
+
+function clearGrid() {
+  container.innerHTML = '';
+}
 
 function makeRows(rows, cols) {
   container.style.setProperty("--grid-rows", rows); //set the property --grid-rows to container

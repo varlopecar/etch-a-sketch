@@ -9,7 +9,7 @@
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   height: 20rem;
-  margin: auto;
+  margin: 2rem auto;
   box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
 }
 

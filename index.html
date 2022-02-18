@@ -11,13 +11,14 @@
     <div>
         <h1 class="title" >Etch-a-sketch</h1>
     </div>
-    <form action="">
+    <form>
         <label for="txtRows">Number of rows:</label>
-        <input id="txtRows" type="number" name="txtRows">
+        <input id="txtRows" type="range" name="txtRows" min="1" max="100">
         <label for="txtCols">Number of columns:</label>
-        <input id="txtCols" type="number" name="txtCols">
+        <input id="txtCols" type="range" name="txtCols" min="1" max="100">
         <input type="button" id="btnSend" value="Send">
-      </form>
+        <input type="button" id="btnClear" value="Clear">
+    </form>
     <div id="container">
     </div>
     <script src="app.js"></script>
